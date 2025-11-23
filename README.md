@@ -4,8 +4,6 @@ Projeto desenvolvido como parte do **Bootcamp Klabin – Excel e Power BI Dashbo
 
 ## Visão geral do dashboard
 
-![Dashboard de Vendas](prints/dashboard.png)
-
 O painel apresenta:
 
 - **KPIs principais**: Faturamento Total, Total de Pedidos, Ticket Médio e Clientes Ativos.  
