@@ -1,9 +1,25 @@
-# Dashboard de Vendas em Excel para E-commerce de Eletrônicos
+# Dashboard de Vendas – E-commerce (Excel)
 
-Este projeto apresenta um dashboard de vendas desenvolvido em Excel para um e-commerce de eletrônicos, apoiado por um modelo relacional em MySQL e por uma tabela analítica consolidada. A ideia é simular um cenário real de monitoramento de performance comercial, permitindo acompanhar faturamento, pedidos, clientes, produtos, formas de pagamento e status dos pedidos em um painel único e interativo.
+Projeto desenvolvido como parte do **Bootcamp Klabin – Excel e Power BI Dashboards**, focado na criação de um dashboard de vendas para um e-commerce de eletrônicos usando apenas Excel Desktop (com Tabelas Dinâmicas e segmentações). O objetivo é ter uma visão executiva simples e interativa, sem depender de scripts SQL ou conexão externa: todos os dados necessários já estão dentro do arquivo `.xlsx`.
 
-O repositório está organizado em três pastas principais. Em `sql/` ficam os scripts responsáveis por criar o banco de dados, popular as tabelas com dados de exemplo, definir a visão analítica de vendas e demonstrar consultas de KPIs diretamente no MySQL (DDL, DML, VIEW e DQL de apoio). Em `excel/` está o arquivo `dashboard_vendas_ecommerce.xlsx`, que concentra toda a solução em três abas: `Base_Vendas`, com a visão analítica materializada em formato de Tabela do Excel; `Calculos`, com as Tabelas Dinâmicas ligadas ao Modelo de Dados (Power Pivot) e às medidas DAX utilizadas nos indicadores (como faturamento total, total de pedidos, ticket médio, clientes ativos, quantidade de itens, faturamento por mês/categoria/formas de pagamento/cidade/status); e `Dashboard`, que apresenta o painel visual com cartões de KPI, gráficos de tendência, rankings (top produtos e melhores clientes) e visões de forma de pagamento, cidades e status do pedido. A pasta `prints/` traz capturas de tela do dashboard final, úteis para visualização rápida do resultado e para uso em portfólio.
+## Visão geral do dashboard
 
-Para quem quiser apenas explorar o dashboard, basta abrir o arquivo `excel/dashboard_vendas_ecommerce.xlsx` no Excel Desktop, habilitar o conteúdo externo se for solicitado e utilizar as segmentações (ano, mês, status do pedido, forma de pagamento, categoria de produto) para filtrar os cenários; todos os cartões e gráficos são alimentados pelas mesmas Tabelas Dinâmicas e medidas do Modelo de Dados, garantindo consistência na análise. Para reproduzir também a camada de banco, recomenda-se um ambiente com MySQL Server e MySQL Workbench para execução dos scripts em `sql/`, além do MySQL ODBC Connector 64-bits e do Microsoft Visual C++ 2022 Redistributable para facilitar integrações futuras; após criar o banco e a visão analítica, é possível reexportar ou conectar a base à aba `Base_Vendas`, mantendo o alinhamento entre o banco relacional e o arquivo Excel.
+![Dashboard de Vendas](prints/dashboard.png)
 
-O projeto foi pensado como entrega de portfólio para análise de dados e BI com Excel: ele demonstra modelagem relacional focada em e-commerce de eletrônicos, consolidação de dados em uma visão analítica única, uso do Modelo de Dados e de medidas DAX no Power Pivot, criação de Tabelas Dinâmicas como camada de cálculo e construção de um dashboard limpo, com KPIs bem definidos e narrativa visual clara sobre a performance de vendas do e-commerce.
+O painel apresenta:
+
+- **KPIs principais**: Faturamento Total, Total de Pedidos, Ticket Médio e Clientes Ativos.  
+- **Análises de vendas**: faturamento mensal e peso do faturamento por categoria.  
+- **Rankings**: Top 10 produtos por faturamento e Top 5 clientes.  
+- **Formas de pagamento e regiões**: participação de cada forma de pagamento no faturamento e top cidades por faturamento.  
+- **Status dos pedidos**: quantidade de pedidos por status e faturamento por status do pedido.  
+
+Todos os gráficos e cartões são controlados por segmentações de dados (ano, mês, status do pedido, forma de pagamento e categoria de produto), permitindo filtrar rapidamente o cenário desejado.
+
+## Arquivo do projeto
+
+O dashboard está disponível no arquivo Excel:
+
+- 📄 **[Download do dashboard em Excel](excel/dashboard_vendas_ecommerce.xlsx)**
+
+Basta abrir o arquivo no **Excel Desktop**, habilitar o conteúdo se solicitado e utilizar as segmentações para explorar as vendas do e-commerce de eletrônicos.
