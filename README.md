@@ -20,6 +20,6 @@ Todos os gráficos e cartões são controlados por segmentações de dados (ano,
 
 O dashboard está disponível no arquivo Excel:
 
-- 📄 **[Download do dashboard em Excel](excel/dashboard_vendas_ecommerce.xlsx)**
+- 📄 **[Download do dashboard em Excel](dashboard_vendas_ecommerce.xlsx)**
 
 Basta abrir o arquivo no **Excel Desktop**, habilitar o conteúdo se solicitado e utilizar as segmentações para explorar as vendas do e-commerce de eletrônicos.
